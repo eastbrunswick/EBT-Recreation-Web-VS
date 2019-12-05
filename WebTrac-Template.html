@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title><?VSI-PageTitle?></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />		
+		<meta name="author" content="www.vermontsystems.com" />
+		<meta name="copyright" content="&copy; <?CurrentYear?> Vermont Systems, Inc." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />		
+		<meta http-equiv="content-type" content="text/html" />
+		<meta http-equiv="cache-control" content="no-cache, no-store" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="-1" />		
+		<link href="<?VSI-StylePath?>app.css?v=<?VSI-ScriptVersion?>" rel="stylesheet" type="text/css" />
+		<?VSI-MobileStyles?>
+    <link href="<?VSI-StylePath?><?VSI-CustomCSS?>?v=<?VSI-ScriptVersion?>" rel="stylesheet" type="text/css" media="screen" />
+		<link rel="icon" href="<?VSI-ImagePath?>favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="<?VSI-ImagePath?>favicon.ico" type="image/x-icon" />    		
+		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>jquery.js?v=<?VSI-ScriptVersion?>"></script>
+		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>app.js?v=<?VSI-ScriptVersion?>"></script>
+		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>run.js?v=<?VSI-ScriptVersion?>"></script>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		$.extend(App.settings, {
+			SessionID: "<?VSI-SessionID?>",
+			DebugLevel: <?VSI-JSDebugLevel?>,
+			Product: "WebTrac", 
+			Version: "<?VSI-Version?>",
+			BaseHref: "<?VSI-BaseHREF?>",
+			ImagePath: "<?VSI-ImagePath?>",
+			ScriptPath: "<?VSI-ScriptPath?>",
+			StylePath: "<?VSI-StylePath?>",
+			LoggedIn: <?VSI-LoggedIn?>,
+			DateFormat: "<?VSI-DateFormat?>",
+			TimeFormat: "<?VSI-TimeFormat?>",
+			PhoneFormat: "<?VSI-PhoneFormat?>",
+      ScriptVersion: "<?VSI-ScriptVersion?>"
+		});
+		<?VSI-LayoutScript?>
+		-->
+		</script>
+	</head>
+	<body data-view="<?VSI-Routine?>">
+		
+		<noscript>
+			Your browser does not support javascript, in order to use this site please enable javascripts and refresh the page.
+		</noscript>
+		
+		<div id="outer" class="<?VSI-Routine?>">
+			<div id="container">		
+
+				<div id="banner">
+					<?VSI-Banner?>
+					<div class="clear"></div>
+				</div>
+				
+				<?VSI-Controls?>
+				
+				<?VSI-Menu?>
+				
+				<div id="leftside">
+					<?VSI-LeftSide?>
+				</div>
+				
+				<div id="rightside">
+					<?VSI-RightSide?>
+				</div>		
+				
+				<div id="content">
+					<div class="inner">
+						<?VSI-LayoutTop?>
+						<?VSI-LayoutLeft?>
+						<?VSI-LayoutRight?>							
+						<?VSI-Message?>
+						<?VSI-Content?>
+						<?VSI-LayoutBottom?>
+						<div class="clear"></div>
+					</div>
+				</div>
+							
+				<div id="footer">
+					<?VSI-Footer?>
+					<div class="clear"></div>
+				</div>
+				
+				<?VSI-FooterLinks?>
+				
+				<?VSI-SupportedBrowsers?>
+				
+				<div id="copyright">
+					<p><?VSI-Copyright?></p>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- Request took <?VSI-RequestTime?> seconds to finish -->
+		
+	</body>
+</html>

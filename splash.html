@@ -1,0 +1,187 @@
+<!-----------------------------------------------BEGIN SPLASH PAGE 10------------------------------------------->
+<link href="/web/images/splash/splash10.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(function(){
+if (App.settings.LoggedIn){
+$(".member").show();
+$(".guest").hide();
+} else {
+$(".member").hide();
+$(".guest").show();
+}
+});
+</script>
+
+<div id="sp_cont">
+
+<div id="sp_top">
+<h1><br />Welcome to East Brunswick Recreation and Parks Online Registration<br /><br /></h1>
+
+<p>SEARCH AND CLICK ON PROGRAMS DIRECTLY FROM OUR BROCHURE BELOW. You can also navigate the site by clicking on one of the images below or using the menu buttons along the top of the page. Currently you can register for programs and passes and we will soon be adding Park Reservations.</p>
+<p style="text-align: center;"><b>PLEASE NOTE OUR PROGRAMS ARE LISTED IN CODE ORDER - WINTER, SPRING, SUMMER, FALL.</B></p>
+<p style="text-align: center;"><b>ONLINE REGISTRATIONS CAN BE PAID BY CREDIT CARD ONLY (NO AMERICAN EXPRESS)</B></p>
+
+<div class="clear"></div>
+
+<div id="sp_links">
+<h2>Quick Links</h2>
+<ul>
+<li><a href="http://www.eastbrunswick.org/Recreation" target="_blank">Department Home Page</a></li>
+<li><a href="/web/images/splash/photos/splash10/faq's.pdf"target="_blank">FAQ's</a></li>
+
+<!-- changing household info form to editable version directly from Qscend storage, not RecTrack storage when changing copy the URL directly from Recreation website-->
+<li><a href="https://www.eastbrunswick.org/filestorage/1137/1155/1192/Household_Information_Form.pdf"target="_blank">Household Information Form</a></li>
+<!-- changing registration form to editable version directly from Qscend storge, not Rectrack storage when changing copy the URL directly from Recreation website-->
+<li><a href="https://www.eastbrunswick.org/filestorage/202/283/1741/1753/Participant_Registration_and_Emergency_Contact_Form.pdf"target="_blank">Registration Form</a></li>
+<li><a href="http://www.eastbrunswick.org/content/202/283/1741/1692/default.aspx"target="_blank">How to Register</a></li>
+
+</ul>
+</div>
+
+<div id="sp_brochure">
+
+
+<h2>Interactive Brochure</h2>
+<!--online.flipbuilder is location of Flip Magazine, change this with each new magazine-->
+<a href="http://online.flipbuilder.com/vwcw/stco/index.html#p=1" target="_blank">
+
+<!--online.flipbuilder is location of Flip Magazine, change this with each new magazine-->
+
+<!--keep the stuff belowe the same except##################################################change the final folder and file name from above################## Change width/height as desired but leave the rest and change the final name.-->
+<img style="width: 200px; height: 259px;" src="https://www.eastbrunswick.org/images/Recreation/2019 Fall Winter Magazine Cover__1567082802_50.207.78.1.jpg" title="Click here for our current brochure!" alt="Click here for our current brochure!" />
+
+
+
+<!--keep the stuff above the same except##################################################change the final folder and file name from above##################  Change width/height as desired but leave the rest and change the final name.-->
+
+<!-- We are pulling the front page of the magazine from Qscend storage and not RecTrack.  When changing just change the final piece of folder from where it's stored.   If we can ever access RecTrack storage go back to using the file location below and change the name of the file
+<img src="/web/images/splash/photos/splash10/EBRecSpringSummerMag.jpg" title="Click here for our current brochure!" alt="Click here for our current brochure!" />
+-->
+
+
+</a>
+</div>
+
+<div id="sp_login" class="guest">
+<h2>Member Login</h2>
+<form method="post" action="login.html?SessionID=<?VSI-SessionID?>" class="loginform">
+<input id="action" type="hidden" name="Action" value="process" />
+<input id="subaction" type="hidden" name="SubAction" value="" />
+<label for="weblogin_username">Username:</label><input id="weblogin_username" type="text" name="weblogin_username" size="20" maxlength="50" value="" tabindex="1" />
+<label for="weblogin_password">Password:</label><input id="weblogin_password" type="password" name="weblogin_password" size="20" maxlength="50" value="" tabindex="2" />
+<input class="button" id="xxsubmit" type="submit" value="Login" title="Sign In" alt="Sign In" tabindex="3" />
+<input class="button" id="xxreset" type="reset" value="Reset" title="Reset" alt="Reset" tabindex="4" />
+</form>
+
+<!-----Tried to create new comment code but couldn't get to link over so directly inserted link to Household Information Form.  If we can create the new comment code and get to link over then delete the direct link to HH Info Sheet.  Where do we find code for household.html?? -->
+<!--      <p><a href="household.html?option=add&SessionID=<?VSI-SessionID?>">Need an account?</a></p>
+-->
+<!-- changing household info form to editable version directly from Qscend storage, not RecTrack storage when changing copy the URL directly from Recreation website-->
+<p><a href="https://www.eastbrunswick.org/filestorage/1137/1155/1192/Household_Information_Form.pdf"target="_blank">Need an account?</a></p>
+<!-- changing household info form to editable version directly from Qscend storage, not RecTrack storage when changing copy the URL directly from Recreation website-->
+
+<p><a href="forgotten.html?option=Password&SessionID=<?VSI-SessionID?>">Forgot your password?</a></p>
+<p><a href="contactus.html?SessionID=<?VSI-SessionID?>">Need Login Help?</a></p>
+</div>
+
+<div id="sp_login2" class="member">
+<h2>You are now Logged In!</h2>
+<p>Now that you are logged into the registration system, you can add items to your shopping cart.</p>
+<div class="clear"></div>
+</div>
+
+<div id="sp_btm">
+<!--Commenting out Crystal Springs for Fall/Winter season
+<div class="sp_mid">
+<a href="search.html?display=detail&module=PM&type=SeasonPass&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/cslogo.jpg" border="0">
+<p>Crystal Springs</p>
+</a>
+</div>
+-->
+
+<div class="sp_mid">
+<a href="https://www.eastbrunswick.org/HalloweenMovie">
+<img src="https://www.eastbrunswick.org/images/Recreation/2019/Halloween RT.jpg" border="0">
+<p>Halloween Movie - VOTE!</p>
+</a>
+</div>
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=ADULT&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/adultpic.jpg" border="0">
+<p>Adult Programs</p>
+</a>
+</div>
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=CAMP&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/daycampnew.jpg" border="0">
+<p>Day Camps/Summer Theater</p>
+</a>
+</div>
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=KIDS&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/youth-programs_web.png" border="0">
+<p>Youth Programs</p>
+</a>
+</div>
+
+<div class="clear"></div><!--USE THIS TO CREATE ANOTHER LINE-->
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=HEALT&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/health.jpg" border="0">
+<p>Health & Safety Programs</p>
+</a>
+</div>
+
+<!--  Commenting out Sandpipers for the Fall/Winter season
+<div class="sp_mid">
+<a href="search.html?module=AR&type=CS&SessionID==<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/sandpiper.jpg" border="0">
+<img src="https://www.eastbrunswick.org/images/Recreation/Fire District Map__1449241998_50.207.78.1.jpg">
+<p>Sandpipers</p>
+</a>
+</div>
+-->
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=SPORT&SessionID=<?VSI-SessionID?>">
+<img src="https://www.eastbrunswick.org/images/Recreation/2019/Sports Words.jpg" border="0"> 
+<p>Sports Programs</p>
+</a>
+</div>
+
+<div class="sp_mid">
+<a href="search.html?module=AR&type=SNEED&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/new daisy logo.jpg" border="0">
+<p>Special Needs</p>
+</a>
+</div>
+
+<!-- Deleting YC section/photo to add Tennis Court reservations
+<div class="sp_mid">
+<a href="search.html?module=PM&type=YCMEMBERSHIP&SessionID=<?VSI-SessionID?>">
+<img src="/web/images/splash/photos/splash10/photo41 .jpg" border="0">
+<p>Youth Council</p>
+</a>
+</div>
+-->
+<div class="sp_mid">
+<a href="search.html?module=FR&type=TENNIS&SessionID=<?VSI-SessionID?>">
+
+<img src="https://www.eastbrunswick.org/images/Recreation/2019/Tennis Pickleball.jpg"  border="0">
+
+
+<p>Tennis & Pickleball Court Reservations</p>
+</a>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-----------------------------------------------END SPLASH PAGE---------------------------------------------->
