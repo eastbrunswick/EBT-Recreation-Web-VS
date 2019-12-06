@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
 	<head>
 		<title><?VSI-PageTitle?></title>
 		<meta charset="utf-8" />
@@ -16,10 +17,13 @@
 		<link href="<?VSI-StylePath?><?VSI-CustomCSS?>" rel="stylesheet" type="text/css" media="screen" />	
 		<link rel="icon" href="<?VSI-ImagePath?>favicon.ico" type="image/x-icon" />
 		<link rel="shortcut icon" href="<?VSI-ImagePath?>favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>jquery.js"></script>
 		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>app.js"></script>
 		<script language="JavaScript" type="text/javascript" src="<?VSI-ScriptPath?>run.js"></script>
 		<script language="JavaScript" type="text/javascript">
+		-->
 		<!--
 		$.extend(App.settings, {
 			SessionID: "<?VSI-SessionID?>",
@@ -37,9 +41,59 @@
 		});
 		<?VSI-LayoutScript?>
 		-->
-		</script>
+		<!--
+					</script>
 	</head>
-	<body data-view="<?VSI-Routine?>">
+-->
+
+	<head>
+		<title>WebTrac Splash</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="author" content="www.vermontsystems.com">
+		<meta name="copyright" content="© 2019 Vermont Systems, Inc.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta http-equiv="content-type" content="text/html">
+		<meta http-equiv="cache-control" content="no-cache, no-store">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">		
+		<link href="https://registration.eastbrunswick.org/WEB/css/app.css" rel="stylesheet" type="text/css">  
+		<link href="https://registration.eastbrunswick.org/WEB/css/responsive.css" rel="stylesheet" type="text/css">
+		<link href="https://registration.eastbrunswick.org/WEB/css/njeastbrunswick31.css" rel="stylesheet" type="text/css" media="screen">	
+		<link rel="icon" href="https://registration.eastbrunswick.org/WEB/images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="https://registration.eastbrunswick.org/WEB/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<script language="JavaScript" type="text/javascript" src="https://registration.eastbrunswick.org/WEB/js/jquery.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://registration.eastbrunswick.org/WEB/js/app.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://registration.eastbrunswick.org/WEB/js/run.js"></script>
+		<script language="JavaScript" type="text/javascript">
+
+		<!--
+		$.extend(App.settings, {
+			SessionID: "afdc84b274cbcc2c1af0b898aaa820a342f244a9d017eb866826dc605b798c98858afa2fc6f94aba6859a6fa2d9f13f4a150ac96a308478b7dc996f0e57c6171",
+			DebugLevel: 0,
+			Product: "WebTrac", 
+			Version: "3.1.10.00.03",
+			BaseHref: "https://registration.eastbrunswick.org/WEB/wbwsc/webtrac.wsc/",
+			ImagePath: "https://registration.eastbrunswick.org/WEB/images/",
+			ScriptPath: "https://registration.eastbrunswick.org/WEB/js/",
+			StylePath: "https://registration.eastbrunswick.org/WEB/css/",
+			LoggedIn: false,
+			DateFormat: "mm/dd/yyyy",
+			TimeFormat: "hh:mm am",
+			PhoneFormat: "(999)999-9999"
+		});
+		
+		-->
+		</script>
+	<link id="file-7b8d3592-b69a-4ffc-aadd-44c0ddabc8e3" type="text/css" rel="stylesheet" href="https://registration.eastbrunswick.org/WEB/css/plugins.css?v=3.1.10.00.03"><link id="file-1fff9457-f803-424f-8c18-49ce0d606766" type="text/css" rel="stylesheet" href="https://registration.eastbrunswick.org/WEB/css/theme/jquery.ui.css?v=3.1.10.00.03"><link id="file-78cf86cf-3188-4b54-9c4a-662fb4834389" type="text/css" rel="stylesheet" href="https://registration.eastbrunswick.org/WEB/css/WebTrac/plugins/jquery.tinycarousel.css?v=3.1.10.00.03"><link id="file-01e17dd6-a814-4b82-895d-2509e6ba4353" type="text/css" rel="stylesheet" href="https://registration.eastbrunswick.org/WEB/css/WebTrac/app.css?v=3.1.10.00.03"><link id="file-5d966030-34ff-49a8-89a9-974e076290e3" type="text/css" rel="stylesheet" href="https://registration.eastbrunswick.org/WEB/css/WebTrac/model/multiselect.css?v=3.1.10.00.03"></head>
+
+
+
+
+
+	<body class="ebt" data-view="<?VSI-Routine?>">
 		
 		<noscript>
 			Your browser does not support javascript, in order to use this site please enable javascripts and refresh the page.
@@ -48,6 +102,11 @@
 		<?VSI-DemoWarning?>  
 		
 		<div id="outer" class="<?VSI-Routine?>">
+
+			<header>
+
+			</header>
+
 			<div id="container">		
 			<div id="container2">
 				<div id="banner">	
@@ -85,50 +144,7 @@
 					</div>
 				</div>
 							
-				<div id="footer">			
-					<div id="ft-top">
-					<div>
-					<a class="ft-min" target="_blank" href="http://www.eastbrunswick.org/content/885/101/default.aspx">
-					<h3>Minutes &amp; Agendas</h3>
-					Read minutes from recent township meetings
-					</a>
-					</div>
-					<div>
-					<a class="ft-shop" target="_blank" href="http://www.eastbrunswick.org/content/198/835/default.aspx">
-					<h3>Shop East Brunswick</h3>
-					Coupons &amp; information from local businesses
-					</a>
-					</div>
-					<div>
-					<a class="ft-news" target="_blank" href="http://www.eastbrunswick.org/content/99/923.aspx">
-					<h3>Newsletter Signup</h3>
-					Sign up to receive the free township newsletter
-					</a>
-					</div>
-					<div>
-					<a class="ft-global" target="_blank" href="http://www.eastbrunswick.org/content/202/269/922.aspx">
-					<h3>Nixle</h3>
-					Sign up to receive emergency notifications
-					</a>
-					</div>
-					</div>
-					<div id="ft-btm">
-					<div class="ft-left">
-					<img class="ft-seal" src="../../images/njeastbrunswick/seal.png" />
-					<strong>East Brunswick Municipal Building</strong>
-					<br />
-					1 Jean Walling Civic Center Drive
-					<br />
-					East Brunswick, NJ 08816
-					</div>
-					<div class="ft-right">
-					Copyright &copy; 2016 East Brunswick, NJ.
-					<br />
-					All Rights Reserved.
-					</div>
-					</div>			
-					<div class="clear"></div>
-				</div>
+				
 				
 				<?VSI-FooterLinks?>
 				
@@ -139,6 +155,54 @@
 				</div>
 			</div>				
 			</div>
+
+			<footer>
+				<div class="row">
+					<div class="col-md-3">
+						<h3>Contact Us</h3>
+						<p>
+							East Brunswick Recreation & Parks<br/>
+							334 Dunhams Corner Road<br/>
+							East Brunswick, NJ 08816<br/>
+						</p>
+						<p>
+							Event Hot Line: 732-390-4040<br>
+							Phone: 732-390-6797
+						</p>
+						<p>
+							Email - recreation@eastbrunswick.org<br>
+							Monday - Friday, 8:00am - 4:30pm
+
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h3>Follow Us</h3>	
+					</div>
+					<div class="col-md-3">
+						<h3>Quick Links</h3>
+						<ul>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/Directory.aspx?did=45" target="_blank">Nixle Alerts/Email</a></li>
+							<li><a href="https://local.nixle.com/messagewidget/east-brunswick-recreation-parks-and-community-services/1208" target="_blank">American Camp Association</a></li>
+							<li><a href="https://www.acacamps.org/" target="_blank">Arbor Day Foundation - Tree City USA</a></li>
+							<li><a href="https://www.nrpa.org/" target="_blank">National Recreation & Park Association</a></li>
+							<li><a href="https://www.njrpa.org/" target="_blank">NJ Recreation & Park Association</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>Helpful Links</h3>
+						<ul>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/Directory.aspx?did=45" target="_blank">Contact Recreation & Parks</a></li>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/" target="_blank">Township Home</a></li>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/sitemap" target="_blank">Site Map</a></li>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/accessibility" target="_blank">Accessibility</a></li>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/copyright" target="_blank">Copyright Notices</a></li>
+							<li><a href="http://nj-eastbrunswick.civicplus.com/privacy" target="_blank">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</footer>
+
 		</div>
 		
 		<!-- Request took <?VSI-RequestTime?> seconds to finish -->
